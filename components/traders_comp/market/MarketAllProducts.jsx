@@ -22,11 +22,11 @@ import axios from "axios";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 
 const CustomTab = styled(Tab)({
-  color: '#a1a1aa',
-  fontWeight: 'bold',
-  '&.Mui-selected': {
-    backgroundColor:"#40a0ff",
-    color: 'white',
+  color: "#a1a1aa",
+  fontWeight: "bold",
+  "&.Mui-selected": {
+    backgroundColor: "#40a0ff",
+    color: "white",
     borderRadius: "10px 10px 0px 0px",
   },
 });
@@ -111,7 +111,6 @@ const MarketAllProducts = () => {
     setCurrentCryptoPage(0);
     setCurrentFlatPage(0);
   };
-
 
   const {
     data: cryptoAssets = [],
@@ -253,9 +252,29 @@ const MarketAllProducts = () => {
       {/* tabs */}
       <TabContext value={value}>
         <div className="flex flex-col items-center justify-center lg:flex-row gap-5 lg:justify-between mb-6 ">
-          <TabList onChange={handleChange} className="bg-zinc-100 dark:bg-secondary rounded-xl overflow-hidden" aria-label="lab API tabs example">
-            <CustomTab sx={{ px:{ xs:1.5, md:3 }, pt:{xs:0, md:0}, pb:{xs:0, md:0} }} label="Crypto Coins" value="1" />
-            <CustomTab sx={{ px:{ xs:1.5, md:3 }, pt:{xs:0, md:0}, pb:{xs:0, md:0} }} label="Flat Coins" value="2" />
+          <TabList
+            onChange={handleChange}
+            className="bg-zinc-100 dark:bg-secondary rounded-xl overflow-hidden"
+            aria-label="lab API tabs example"
+          >
+            <CustomTab
+              sx={{
+                px: { xs: 1.5, md: 3 },
+                pt: { xs: 0, md: 0 },
+                pb: { xs: 0, md: 0 },
+              }}
+              label="Crypto Coins"
+              value="1"
+            />
+            <CustomTab
+              sx={{
+                px: { xs: 1.5, md: 3 },
+                pt: { xs: 0, md: 0 },
+                pb: { xs: 0, md: 0 },
+              }}
+              label="Flat Coins"
+              value="2"
+            />
           </TabList>
           {/* search field */}
           <Search

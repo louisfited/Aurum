@@ -77,7 +77,9 @@ const CurrencyBuy = ({
     const getSelectedCoin = flatCurrency.find(
       (asset) => asset._id === event.target.value
     );
-    setSelectedCoin(getSelectedCoin);
+    if (getSelectedCoin) {
+      setSelectedCoin(getSelectedCoin);
+    }
   };
 
   // crypto payment process

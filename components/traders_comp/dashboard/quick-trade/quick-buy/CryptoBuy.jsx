@@ -48,7 +48,7 @@ const CssTextField = styled(TextField)({
 });
 
 const CryptoBuy = ({ cryptoCurrency, userData, refetchUserData }) => {
-  const [selectedCoin, setSelectedCoin] = useState({});
+  const [selectedCoin, setSelectedCoin] = useState(null);
   const [investment, setInvestment] = useState(0);
   const secureAPI = useSecureAPI();
   const { user } = useAuth();
@@ -60,20 +60,31 @@ const CryptoBuy = ({ cryptoCurrency, userData, refetchUserData }) => {
     "purchased-asset",
     user?.email,
   ]);
+
   const handleInvestmentChange = (event) => {
     const newInvestment = event.target.value;
     setInvestment(newInvestment);
   };
 
   const handleSelectChange = (event) => {
+    const selectedId = event.target.value;
     const getSelectedCoin = cryptoCurrency.find(
-      (asset) => asset._id === event.target.value
+      (asset) => asset._id === selectedId
     );
     setSelectedCoin(getSelectedCoin);
   };
 
   // crypto payment process
   const handleBuyCrypto = () => {
+    if (!selectedCoin) {
+      // Ensure a coin is selected
+      Swal.fire({
+        title: `Please select a coin!`,
+        icon: "error",
+      });
+      return;
+    }
+
     const usersBalance = parseFloat(userData.balance);
     const remainingBalance = usersBalance - parseFloat(investment).toFixed(2);
     const currentPrice = parseFloat(selectedCoin.price).toFixed(2);
@@ -208,11 +219,12 @@ const CryptoBuy = ({ cryptoCurrency, userData, refetchUserData }) => {
             Select
           </InputLabel>
           <Select
-            sx={{ border: "#40a0ff", borderRadius: "40px" }}
+            sx={{ border: "white", borderRadius: "40px" }}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             label="Form"
             size="small"
+            value={selectedCoin ? selectedCoin._id : ""}
             onChange={handleSelectChange}
           >
             {cryptoCurrency.map((asset, idx) => (
@@ -242,10 +254,7 @@ const CryptoBuy = ({ cryptoCurrency, userData, refetchUserData }) => {
         id="outlined-number"
         label={`Investment amount`}
         type="number"
-        sx={{
-          border: "1px solid #40a0ff",
-          borderRadius: "40px",
-        }}
+        variant="outlined"
         InputLabelProps={{
           shrink: true,
         }}
@@ -262,7 +271,7 @@ const CryptoBuy = ({ cryptoCurrency, userData, refetchUserData }) => {
         <Button
           onClick={handleBuyCrypto}
           variant="contained"
-          disabled={investment <= 0 || !selectedCoin.name}
+          disabled={investment <= 0 || !selectedCoin}
         >
           Buy now
         </Button>

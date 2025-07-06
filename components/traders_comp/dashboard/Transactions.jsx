@@ -26,7 +26,6 @@ const Transactions = () => {
     return;
   }
 
-  console.log(specificTransactionsData);
   return (
     <div className="xl:col-span-6 3xl:col-span-4 w-full bg-white dark:bg-quaternary rounded-xl shadow-md dark:shadow-xl p-5">
       <div className="flex flex-wrap items-center justify-between  border-b pb-2 dark:border-b-darkThree mb-5">

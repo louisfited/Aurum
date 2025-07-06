@@ -46,12 +46,13 @@ const SocialLogin = () => {
   };
   return (
     <>
-        <button
-          onClick={() => handleSocialLogin(googleLogin)}
-          className="w-full flex items-center justify-center py-2 gap-3 rounded-full text-black  border border-zinc-400 hover:border-primary hover:bg-primary/30  bg-transparent"
-        >
-          <FcGoogle className="text-2xl"></FcGoogle> <p className="text-sm">Log in with Google</p>
-        </button>
+      <button
+        onClick={() => handleSocialLogin(googleLogin)}
+        className="w-full flex items-center justify-center py-2 gap-3 rounded-full text-black  border border-zinc-400 hover:border-primary hover:bg-primary/30  bg-transparent"
+      >
+        <FcGoogle className="text-2xl"></FcGoogle>{" "}
+        <p className="text-sm">Log in with Google</p>
+      </button>
     </>
   );
 };
