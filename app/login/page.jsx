@@ -12,6 +12,7 @@ export const metadata = {
 
 const Login = () => {
   return (
+  
     <div
       style={{
         backgroundImage: `url(/loginBg.jpg)`,

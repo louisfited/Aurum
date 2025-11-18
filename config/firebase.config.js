@@ -10,9 +10,12 @@ const firebaseConfig = {
     projectId: process.env.NEXT_PUBLIC_VITE_projectId,
     storageBucket: process.env.NEXT_PUBLIC_VITE_storageBucket,
     messagingSenderId: process.env.NEXT_PUBLIC_VITE_messagingSenderId,
-    appId: process.env.NEXT_PUBLIC_VITE_appId
+    appId: process.env.NEXT_PUBLIC_VITE_appId,
+     measurementId: process.env.NEXT_PUBLIC_VITE_measurementId
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export default app;
+
+
