@@ -190,7 +190,7 @@ const RegisterForm = () => {
 
         <div className="flex justify-center">
           <ReCAPTCHA
-            sitekey="6LelPTApAAAAADWVe8dSbkcjltECOr38kOEygA9u"
+            sitekey="6LcCNxAsAAAAABwzNWZqc54qdbpRSjr5nyDL-2t_"
             onChange={onChange}
           />
         </div>
