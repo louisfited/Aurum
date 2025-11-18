@@ -56,12 +56,12 @@ export default function RootNav() {
 
           <Link href="/" className="hidden md:flex">
             {" "}
-            <Image src={logo} alt="Logo" width={140} height={"auto"} />
+            <Image src={"/aurum.png"} alt="Logo" width={140} height={60} />
           </Link>
 
           <Link href="/" className="flex md:hidden">
             {" "}
-            <Image src={logo2} alt="Logo" width={40} height={"auto"} />
+            <Image src={"/aurum.png"} alt="Logo" width={40} height={60} />
           </Link>
 
           {user?.email ? (
