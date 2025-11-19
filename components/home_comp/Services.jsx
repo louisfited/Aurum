@@ -16,11 +16,9 @@ import Subtitle from "../library/Subtitle";
 const Services = () => {
   return (
     <Container className="py-20">
-      <Title>Explore Our Trading Services</Title>
+      <Title>Explore Our Bullion Services</Title>
       <Subtitle>
-        Discover essential tools for successful trading. From market insights to
-        user-friendly platforms, we offer everything you need to trade with
-        confidence.
+      Access everything you need to buy, sell, and securely store physical gold, silver, and platinum with confidence.
       </Subtitle>
 
       <motion.div
@@ -40,11 +38,10 @@ const Services = () => {
               height={40}
               placeholder="blur"
             />
-            <h3 className="font-semibold">Real Time Market Updates</h3>
+            <h3 className="font-semibold">Live Bullion Pricing</h3>
           </div>
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Get instant updates on market prices, news, and events to make
-            informed decisions.
+          Track real-time gold, silver, and platinum prices so you can buy or sell at the moment that suits you.
           </p>
         </div>
         {/* cart 2  */}
@@ -57,12 +54,11 @@ const Services = () => {
               height={40}
               placeholder="blur"
             />
-            <h3 className="font-semibold">Tools for Technical Analysis</h3>
+            <h3 className="font-semibold">Secure Storage Options</h3>
           </div>
 
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Access easy-to-use charts and tools to analyze market trends and
-            find trading opportunities.
+          Store your bullion in fully insured, professional-grade vaults across global locations of your choice.
           </p>
         </div>
         {/* cart 3  */}
@@ -75,12 +71,11 @@ const Services = () => {
               height={40}
               placeholder="blur"
             />
-            <h3 className="font-semibold">Educational Resources</h3>
+            <h3 className="font-semibold">Market Insights & Guidance</h3>
           </div>
 
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Learn from our articles, tutorials, and videos to improve your
-            trading skills.
+          Stay informed with clear insights and helpful resources designed to support smarter precious-metal decisions.
           </p>
         </div>
         {/* cart 4  */}
@@ -93,12 +88,11 @@ const Services = () => {
               height={40}
               placeholder="blur"
             />
-            <h3 className="font-semibold">User Friendly Platform</h3>
+            <h3 className="font-semibold">Simple, Intuitive Platform</h3>
           </div>
 
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Trade seamlessly with our intuitive platform, equipped with advanced
-            features.
+          Buy, sell, or withdraw your bullion effortlessly through a clean and easy-to-use interface
           </p>
         </div>
         {/* cart 5  */}
@@ -111,12 +105,11 @@ const Services = () => {
               height={40}
               className="rounded-md"
             />
-            <h3 className="font-semibold">Diverse Asset Classes</h3>
+            <h3 className="font-semibold">Wide Selection of Metals</h3>
           </div>
 
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Explore a wide range of asset classes including currencies and
-            cryptocurrencies for diversified trading opportunities.
+          Access physical gold, silver, and platinum in various forms and quantities to suit your investment goals.
           </p>
         </div>
         {/* cart 6  */}
@@ -129,13 +122,11 @@ const Services = () => {
               height={40}
               placeholder="blur"
             />
-            <h3 className="font-semibold">Integrated Wallet</h3>
+            <h3 className="font-semibold">Integrated Account Management</h3>
           </div>
 
           <p className="text-sm font-medium mt-3 text-darkGray">
-            Securely manage your funds and assets with our integrated wallet
-            service, providing convenience and peace of mind for your
-            transactions.
+          Manage your holdings, view your balances, and request withdrawals seamlessly — all in one secure account.
           </p>
         </div>
       </motion.div>

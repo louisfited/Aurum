@@ -118,11 +118,11 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.1 }}
-              className="pl-5 xs:pl-10 md:pl-16  3xl:pl-24 text-3xl xs:text-4xl md:text-5xl 2xl:text-6xl font-extrabold"
+              className="pl-5 xs:pl-10 md:pl-10  3xl:pl-10 text-3xl xs:text-4xl md:text-5xl 2xl:text-6xl font-extrabold"
             >
               <Typewriter
                 options={{
-                  strings: ["NexTrade", "Cryptos", "Currencies"],
+                  strings: ["AU", "Gold", "Silver"],
                   autoStart: true,
                   loop: true,
                   cursor: "",
@@ -141,9 +141,9 @@ const Banner = () => {
           >
             {" "}
             <span className="block text-lg md:text-2xl 2xl:text-xl  3xl:text-2xl font-bold mb-2">
-              Join world&apos;s biggest & trusted exchange.
+            Purchase gold, silver, and platinum 
             </span>
-            Trade in Bitcoin, Ethereum, and many more cryptos and currencies.
+           <span className="text-lg md:text-2xl 2xl:text-xl  3xl:text-2xl"> bullion online at highly competitive prices.</span>
           </motion.p>
           {/* group */}
           <div className="h-16 relative w-full z-10">

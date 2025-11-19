@@ -30,7 +30,7 @@ const TradingStep = () => {
               <h1 className="text-xl font-semibold">Deposit</h1>
             </div>
             <p className="text-sm mt-3">
-              Create account and add funds. We work with banks and cards.
+            Create an account and add funds.
             </p>
           </div>
         </motion.div>
@@ -48,8 +48,7 @@ const TradingStep = () => {
               <h1 className="text-xl font-semibold">Trade</h1>
             </div>
             <p className="text-sm mt-3 text-white">
-              Trade any of 100 assets and stocks. Use technical analysis and
-              trade the news
+            Buy, trade and store gold, silver and platinum.
             </p>
           </div>
         </motion.div>
@@ -66,8 +65,7 @@ const TradingStep = () => {
               <h1 className="text-xl font-semibold">Withdraw</h1>
             </div>
             <p className="text-sm mt-3 text-white">
-              Get funds easily to your bank card or e-wallet. We take no
-              commission.
+            Get funds easily to your bank.
             </p>
           </div>
         </motion.div>

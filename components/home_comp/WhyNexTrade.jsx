@@ -17,12 +17,13 @@ const WhyChooseUs = () => {
   return (
     <Container className=" py-5 text-zinc-200">
       <Title animation={false} className="text-start text-primary">
-        Why NexTrade
+        Why AU
       </Title>
-      <Subtitle animation={false} className="text-start w-5/6">
+      <Subtitle animation={false} className="text-start w-5/6 pb-3">
         {" "}
-        At NexTrade, your trading experience is our top priority, and we stand
-        out for <br /> several compelling reasons.
+        At AU, we make buying, selling, and storing precious metals simple, secure, and 
+        <br />
+        cost-effective — here's what sets us apart.
       </Subtitle>
       {/* content */}
       <div className="xl:flex xl:-mt-16 flex-row-reverse items-center justify-between gap-10">
@@ -54,7 +55,7 @@ const WhyChooseUs = () => {
               {" "}
               <h3 className="text-lg font-semibold">Ease of Use</h3>
               <p className="text-sm font-medium text-gray-400">
-                Intuitive platform design for seamless trading experiences.
+              A clean, intuitive platform that makes purchasing and managing your bullion effortless.
               </p>
             </div>
           </div>
@@ -64,8 +65,7 @@ const WhyChooseUs = () => {
               {" "}
               <h3 className="text-lg font-semibold">Safety</h3>
               <p className="text-sm font-medium text-gray-400">
-                Strong security protocols safeguarding assets with utmost
-                reliability.
+              Your gold, silver, and platinum are protected in fully insured, high-security vaults around the world.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
               {" "}
               <h3 className="text-lg font-semibold">Low Charges</h3>
               <p className="text-sm font-medium text-gray-400">
-                Competitive fees to maximize your investment returns.
+              Industry-leading storage and transaction fees help you keep more of your investment.
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
               {" "}
               <h3 className="text-lg font-semibold">Fast Transaction</h3>
               <p className="text-sm font-medium text-gray-400">
-                Efficient trade execution ensuring timely transactions.
+              Buy or sell instantly, with quick settlement and prompt transfers when you need your funds.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ const WhyChooseUs = () => {
               {" "}
               <h3 className="text-lg font-semibold">Educational Recourses</h3>
               <p className="text-sm font-medium text-gray-400">
-                Accessible tutorials and tools to enhance trading skills.
+              Clear guides and helpful insights to support smarter bullion decisions.
               </p>
             </div>
           </div>
@@ -103,9 +103,9 @@ const WhyChooseUs = () => {
             <MdOutlineSupportAgent className="text-6xl text-primary" />
             <div className="">
               {" "}
-              <h3 className="text-lg font-semibold">24/4 Support</h3>
+              <h3 className="text-lg font-semibold">Fast Support</h3>
               <p className="text-sm font-medium text-gray-400">
-                24/7 support available for instant assistance and guidance.
+              Assistance whenever you need help or have questions.
               </p>
             </div>
           </div>
