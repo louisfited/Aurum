@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
         {" "}
         At AU, we make buying, selling, and storing precious metals simple, secure, and 
         <br />
-        cost-effective — here's what sets us apart.
+        cost-effective — here&rsquo;s what sets us apart.
       </Subtitle>
       {/* content */}
       <div className="xl:flex xl:-mt-16 flex-row-reverse items-center justify-between gap-10">
