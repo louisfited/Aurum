@@ -8,6 +8,10 @@ import WhyNexTrade from "@/components/home_comp/WhyNexTrade";
 import Testimonials from "@/components/home_comp/Testimonials";
 import Modal from "@/components/home_comp/Modal";
 
+import MetalsPriceTable from "@/components/MetalWidget";
+import MetalsOverviewTable from "@/components/MetalWidget";
+
+
 // add title in metadata
 export const metadata = {
   title: "Home - NexTrade",
@@ -15,12 +19,19 @@ export const metadata = {
 };
 
 export default function Home() {
+
+
+  
   return (
     <main className="overflow-hidden text-zinc-100 font-montserrat">
       <Banner />
       <TradingStep />
       <InvestSolutions />
       <StartTrading />
+      <div className="md:px-16 px-4">
+      <MetalsOverviewTable/>
+
+      </div>
       <Services />
       <WhyNexTrade />
       <Testimonials />
