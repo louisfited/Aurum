@@ -10,6 +10,7 @@ import Modal from "@/components/home_comp/Modal";
 
 import MetalsPriceTable from "@/components/MetalWidget";
 import MetalsOverviewTable from "@/components/MetalWidget";
+import MetalWidget from "@/components/MetalWidget";
 
 
 // add title in metadata
@@ -26,12 +27,10 @@ export default function Home() {
     <main className="overflow-hidden text-zinc-100 font-montserrat">
       <Banner />
       <TradingStep />
+      <MetalWidget/>
       <InvestSolutions />
       <StartTrading />
-      <div className="md:px-16 px-4">
-      <MetalsOverviewTable/>
-
-      </div>
+    
       <Services />
       <WhyNexTrade />
       <Testimonials />
