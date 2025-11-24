@@ -27,6 +27,7 @@ export default function Home() {
     <main className="overflow-hidden text-zinc-100 font-montserrat">
       <Banner />
       <TradingStep />
+      
       <MetalWidget/>
       <InvestSolutions />
       <StartTrading />

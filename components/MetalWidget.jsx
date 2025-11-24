@@ -84,11 +84,11 @@ function MetalWidget() {
             "symbols": [
               {
                 "name": "OANDA:XAUUSD",
-                "displayName": ""
+                "displayName": "Gold"
               },
               {
-                "name": "CAPITALCOM:SILVER",
-                "displayName": ""
+                "name": "OANDA:XAGUSD",
+                "displayName": "Silver"
               }
             ]
           }
