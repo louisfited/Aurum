@@ -77,22 +77,40 @@ function MetalWidget() {
         "backgroundColor": "#0F0F0F",
         "support_host": "https://www.tradingview.com",
         "width": "100%",
-        "height": 200,
-        "symbolsGroups": [
-          {
-            "name": "Precious Metals",
-            "symbols": [
-              {
-                "name": "OANDA:XAUUSD",
-                "displayName": "Gold"
-              },
-              {
-                "name": "OANDA:XAGUSD",
-                "displayName": "Silver"
-              }
-            ]
-          }
-        ]
+        "height": 400,
+"symbolsGroups": [
+  {
+    "name": "Precious Metals",
+    "symbols": [
+      {
+        "name": "OANDA:XAUUSD",
+        "displayName": "Gold"
+      },
+      {
+        "name": "OANDA:XAGUSD",
+        "displayName": "Silver"
+      },
+      {
+        "name": "OANDA:XPTUSD",
+        "displayName": "Platinum"
+      },
+      {
+        "name": "OANDA:XPDUSD",
+        "displayName": "Palladium"
+      }
+    ]
+  },
+  {
+    "name": "Industrial Metals",
+    "symbols": [
+      {
+        "name": "OANDA:XCUUSD",
+        "displayName": "Copper"
+      }
+    ]
+  }
+]
+
       }`;
       
       container.current.appendChild(script);
