@@ -20,11 +20,15 @@ const Footer = () => {
       <Container className="grid grid-cols-1 md:grid-cols-2  3xl:grid-cols-6  justify-between gap-10 py-10">
         <div className="md:col-span-2  3xl:col-span-2 flex flex-col gap-3">
           <Link href={"/"}>
+          <div className="w-[150px] h-[70px] relative">
             <Image
-              src={logo}
+              src={"/aurumlogo.png"}
               alt=""
-              style={{ width: "150px", height: "auto" }}
-            />
+              fill
+              className="w-full h-full absolute"
+              // style={{ width: "150px", height: "auto" }}
+              />
+              </div>
           </Link>
           <p className="text-darkGray text-sm 3xl:max-w-80">
             The Company does not provide services to citizens and/or residents
