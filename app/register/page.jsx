@@ -1,8 +1,8 @@
-import Link from "next/link";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import Image from "next/image";
-import RegisterForm from "./RegisterForm";
-import loginSideImg from "@/assets/loginSideImg.jpg";
+// import Link from "next/link";
+// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import Image from "next/image";
+// import RegisterForm from "./RegisterForm";
+// import loginSideImg from "@/assets/loginSideImg.jpg";
 
 // add title in metadata
 export const metadata = {
@@ -11,6 +11,10 @@ export const metadata = {
 };
 
 const Register = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <div
       style={{

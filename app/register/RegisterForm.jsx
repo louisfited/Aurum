@@ -1,19 +1,19 @@
-"use client";
-import SocialLogin from "@/components/auth/SocialLogin";
-import Button from "@/components/library/Button";
-import getDate from "@/components/utils/date";
-import useAuth from "@/hooks/useAuth";
-import usePublicAPI from "@/hooks/usePublicAPI";
-import styled from "@emotion/styled";
-import { Stack, TextField, Typography } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
-import logo from "../../assets/logo/NexTrade-Logo-Original.png";
+// "use client";
+// import SocialLogin from "@/components/auth/SocialLogin";
+// import Button from "@/components/library/Button";
+// import getDate from "@/components/utils/date";
+// import useAuth from "@/hooks/useAuth";
+// import usePublicAPI from "@/hooks/usePublicAPI";
+// import styled from "@emotion/styled";
+// import { Stack, TextField, Typography } from "@mui/material";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { useRouter } from "next/navigation";
+// import { useState } from "react";
+// import ReCAPTCHA from "react-google-recaptcha";
+// import { useForm } from "react-hook-form";
+// import Swal from "sweetalert2";
+// import logo from "../../assets/logo/NexTrade-Logo-Original.png";
 
 // customized TextField
 const CssTextField = styled(TextField)({
@@ -111,6 +111,9 @@ const RegisterForm = () => {
       });
   };
 
+  return( <div>
+    play
+  </div>)
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

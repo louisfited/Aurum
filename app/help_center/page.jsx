@@ -1,13 +1,13 @@
-import Typography from "@mui/material/Typography";
-import Container from "@/components/library/Container";
-import Accordion from "@mui/material/Accordion";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
-import HelpCenterCard from "./HelpCenterCard";
-import NewsLatter from "./NewsLatter";
+// import Typography from "@mui/material/Typography";
+// import Container from "@/components/library/Container";
+// import Accordion from "@mui/material/Accordion";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import AccordionDetails from "@mui/material/AccordionDetails";
+// import AccordionSummary from "@mui/material/AccordionSummary";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
+// import HelpCenterCard from "./HelpCenterCard";
+// import NewsLatter from "./NewsLatter";
 
 // add title in metadata
 export const metadata = {
@@ -16,6 +16,10 @@ export const metadata = {
 };
 
 const page = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="py-20 overflow-hidden">
       <Title>Welcome to our Help Center</Title>

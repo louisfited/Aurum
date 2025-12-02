@@ -1,14 +1,14 @@
-import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
-import shakeHand from "../../assets/shakeHand.png";
-import mission from "../../assets/mission.png";
-import tradeCurrency from "../../assets/tradeCurrency.png";
-import investment from "../../assets/investment.png";
-import cryptocurrencyTrade from "../../assets/cryptocurrencyTrade.png";
-import Image from "next/image";
-import Container from "@/components/library/Container";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
+// import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
+// import React from "react";
+// import shakeHand from "../../assets/shakeHand.png";
+// import mission from "../../assets/mission.png";
+// import tradeCurrency from "../../assets/tradeCurrency.png";
+// import investment from "../../assets/investment.png";
+// import cryptocurrencyTrade from "../../assets/cryptocurrencyTrade.png";
+// import Image from "next/image";
+// import Container from "@/components/library/Container";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
 
 // add title in metadata
 export const metadata = {
@@ -17,6 +17,10 @@ export const metadata = {
 };
 
 const AboutNexTrade = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="py-20 text-darkGray">
       <Title>About NexTrade</Title>

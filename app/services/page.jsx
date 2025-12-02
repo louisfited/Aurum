@@ -1,7 +1,7 @@
-import Container from "@/components/library/Container";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
-import ServiceCard from "./ServiceCard";
+// import Container from "@/components/library/Container";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
+// import ServiceCard from "./ServiceCard";
 
 // add title in metadata
 export const metadata = {
@@ -10,6 +10,10 @@ export const metadata = {
 };
 
 const Services = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="py-20 overflow-hidden">
       <Title> Service We Offer</Title>

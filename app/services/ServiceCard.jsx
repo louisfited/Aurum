@@ -1,16 +1,21 @@
-"use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../components/utils/variants";
-import Icon1 from "../../assets/Services/icon-1.png";
-import Icon2 from "../../assets/Services/icon-2.png";
-import Icon3 from "../../assets/Services/icon-3.png";
-import Icon4 from "../../assets/Services/icon-4.png";
-import Icon5 from "../../assets/Services/icon-5.png";
-import Icon6 from "../../assets/Services/icon-6.png";
+// "use client";
+// import Image from "next/image";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../components/utils/variants";
+// import Icon1 from "../../assets/Services/icon-1.png";
+// import Icon2 from "../../assets/Services/icon-2.png";
+// import Icon3 from "../../assets/Services/icon-3.png";
+// import Icon4 from "../../assets/Services/icon-4.png";
+// import Icon5 from "../../assets/Services/icon-5.png";
+// import Icon6 from "../../assets/Services/icon-6.png";
 
 const ServiceCard = () => {
+  
+  return( <div>
+    play
+  </div>)
   return (
+
     <div className="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-10 mt-10 text-darkGray">
       {/* cart 1  */}
       <motion.div
