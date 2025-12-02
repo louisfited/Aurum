@@ -1,34 +1,34 @@
-"use client";
-import React from "react";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Button,
-  Box,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  Tab,
-  styled,
-} from "@mui/material";
-import Image from "next/image";
-import { FaUserCircle } from "react-icons/fa";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
-import WarningAmberIcon from "@mui/icons-material/WarningAmber";
-import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { useState } from "react";
-import Swal from "sweetalert2";
-import useSecureAPI from "@/hooks/useSecureAPI";
-import ManageUserTopBar from "./ManageUserTopBar";
-import UsersInfo from "./UsersInfo";
-import useAllUsersData from "@/hooks/useAllUsersData";
+// "use client";
+// import React from "react";
+// import {
+//   Accordion,
+//   AccordionDetails,
+//   AccordionSummary,
+//   Button,
+//   Box,
+//   Dialog,
+//   DialogActions,
+//   DialogContent,
+//   DialogTitle,
+//   FormControl,
+//   InputLabel,
+//   MenuItem,
+//   Select,
+//   Tab,
+//   styled,
+// } from "@mui/material";
+// import Image from "next/image";
+// import { FaUserCircle } from "react-icons/fa";
+// import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+// import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+// import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+// import { TabContext, TabList, TabPanel } from "@mui/lab";
+// import { useState } from "react";
+// import Swal from "sweetalert2";
+// import useSecureAPI from "@/hooks/useSecureAPI";
+// import ManageUserTopBar from "./ManageUserTopBar";
+// import UsersInfo from "./UsersInfo";
+// import useAllUsersData from "@/hooks/useAllUsersData";
 
 const CustomTab = styled(Tab)({
   color: '#a1a1aa',
@@ -171,6 +171,10 @@ const ManageUserBody = () => {
       setErrorMsg();
     }
   };
+
+  return( <div>
+    play
+  </div>)
   return (
     <div>
       <ManageUserTopBar

@@ -4,6 +4,9 @@ import PeopleIcon from "@mui/icons-material/People";
 import { MdAdminPanelSettings } from "react-icons/md";
 
 const ManageUserTopBar = ({ allUser, traderAccounts, adminAccounts }) => {
+  return( <div>
+    play
+  </div>)
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 5xl:grid-cols-3 justify-between gap-5 mb-6 ">
       {/* total users */}

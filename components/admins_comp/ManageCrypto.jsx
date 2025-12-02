@@ -1,26 +1,26 @@
-"use client";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  FormControl,
-  IconButton,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-} from "@mui/material";
-import Image from "next/image";
-import React, { useState } from "react";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
-import Swal from "sweetalert2";
-import useSecureAPI from "@/hooks/useSecureAPI";
-import toast from "react-hot-toast";
-import axios from "axios";
-import "./manageCoin.css";
+// "use client";
+// import {
+//   Button,
+//   Dialog,
+//   DialogActions,
+//   DialogContent,
+//   DialogTitle,
+//   FormControl,
+//   IconButton,
+//   InputLabel,
+//   MenuItem,
+//   Select,
+//   TextField,
+// } from "@mui/material";
+// import Image from "next/image";
+// import React, { useState } from "react";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import EditIcon from "@mui/icons-material/Edit";
+// import Swal from "sweetalert2";
+// import useSecureAPI from "@/hooks/useSecureAPI";
+// import toast from "react-hot-toast";
+// import axios from "axios";
+// import "./manageCoin.css";
 
 const image_hosting_key = `4696195291e937983db500161bc852ce`;
 const ManageCrypto = ({ assets, refetch }) => {
@@ -174,6 +174,10 @@ const ManageCrypto = ({ assets, refetch }) => {
     }
   };
 
+
+  return( <div>
+    play
+  </div>)
   return (
     <div className="gap-6 grid md:grid-cols-2 2xl:grid-cols-3  3xl:grid-cols-4 my-6">
       <Dialog

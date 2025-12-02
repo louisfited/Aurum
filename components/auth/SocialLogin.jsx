@@ -1,10 +1,10 @@
-import useAuth from "@/hooks/useAuth";
-import { useRouter } from "next/navigation";
-import toast from "react-hot-toast";
-import { FcGoogle } from "react-icons/fc";
-import usePublicAPI from "@/hooks/usePublicAPI";
-import Button from "../library/Button";
-import getDate from "../utils/date";
+// import useAuth from "@/hooks/useAuth";
+// import { useRouter } from "next/navigation";
+// import toast from "react-hot-toast";
+// import { FcGoogle } from "react-icons/fc";
+// import usePublicAPI from "@/hooks/usePublicAPI";
+// import Button from "../library/Button";
+// import getDate from "../utils/date";
 
 const SocialLogin = () => {
   const { googleLogin } = useAuth();
@@ -44,6 +44,10 @@ const SocialLogin = () => {
         toast.error(error.message.slice(10));
       });
   };
+
+  return( <div>
+    play
+  </div>)
   return (
     <>
       <button

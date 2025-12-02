@@ -1,6 +1,10 @@
 import React from "react";
 
 const UsersInfo = ({ singleUser }) => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <div className="text-sm lg:text-base dark:text-white">
       <p className="xs:hidden">
