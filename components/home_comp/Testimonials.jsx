@@ -7,8 +7,8 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import usePublicFetch from "@/hooks/usePublicFetch";
-import { Rating } from "@smastrom/react-rating";
-import "@smastrom/react-rating/style.css";
+// import { Rating } from "@smastrom/react-rating";
+// import "@smastrom/react-rating/style.css";
 import Subtitle from "../library/Subtitle";
 
 const Testimonials = () => {
@@ -75,11 +75,11 @@ const Testimonials = () => {
                     {" "}
                     {review?.reviewerName}
                   </h3>
-                  <Rating
+                  {/* <Rating
                     style={{ maxWidth: 90 }}
                     value={review?.rating}
                     readOnly
-                  />
+                  /> */}
                 </div>
                 <p className="text-xs">{review?.timestamp ? new Date(review.timestamp).toLocaleString('en-US', dateFormatterOptions) : 'No timestamp'}</p>
                 <p className="text-sm mt-3" style={{ textAlign: 'justify' }}>{review?.feedback} </p>

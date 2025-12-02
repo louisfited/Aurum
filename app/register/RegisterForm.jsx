@@ -117,7 +117,7 @@ const RegisterForm = () => {
       className="mx-5 my-16 2xl:mx-0 p-5 2xl:p-4 2xl:px-10 3xl:p-5 3xl:px-10 md:px-10 w-full md:w-[500px] xl:w-[400px] 3xl:w-[500px] border rounded-xl bg-white/60 backdrop-blur-xl"
     >
       <Link href="/">
-        <Image src={logo} alt="Logo" className="w-36 3xl:mt-5 mb-6 z-10" />
+        <Image src={"/aurumlogo.png"} alt="Logo" width={100} height={30} className="w-36 mx-auto 3xl:mt-5 mb-5 z-10" />
       </Link>
       <h3 className="text-xl font-semibold text-black">
         Create an account

@@ -1,15 +1,15 @@
-import { Card, CardContent, Grid, Typography } from "@mui/material";
-import Image from "next/image";
-import React from "react";
-import icon1 from "../../assets/whyChooseUs-Icons/icon-1.png";
-import icon2 from "../../assets/whyChooseUs-Icons/icon-2.png";
-import icon3 from "../../assets/whyChooseUs-Icons/icon-3.png";
-import icon4 from "../../assets/whyChooseUs-Icons/icon-4.png";
-import icon5 from "../../assets/whyChooseUs-Icons/icon-5.png";
-import icon6 from "../../assets/whyChooseUs-Icons/icon-6.png";
-import Container from "@/components/library/Container";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
+// import { Card, CardContent, Grid, Typography } from "@mui/material";
+// import Image from "next/image";
+// import React from "react";
+// import icon1 from "../../assets/whyChooseUs-Icons/icon-1.png";
+// import icon2 from "../../assets/whyChooseUs-Icons/icon-2.png";
+// import icon3 from "../../assets/whyChooseUs-Icons/icon-3.png";
+// import icon4 from "../../assets/whyChooseUs-Icons/icon-4.png";
+// import icon5 from "../../assets/whyChooseUs-Icons/icon-5.png";
+// import icon6 from "../../assets/whyChooseUs-Icons/icon-6.png";
+// import Container from "@/components/library/Container";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
 
 // add title in metadata
 export const metadata = {
@@ -18,6 +18,10 @@ export const metadata = {
 };
 
 const WhyChooseUs = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="py-24">
       <Title>Why NexTrade ?</Title>

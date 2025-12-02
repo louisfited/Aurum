@@ -1,14 +1,19 @@
-"use client";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../components/utils/variants";
-import NotStartedOutlinedIcon from "@mui/icons-material/NotStartedOutlined";
-import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
-import PriceChangeOutlinedIcon from "@mui/icons-material/PriceChangeOutlined";
-import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
-import WebhookOutlinedIcon from "@mui/icons-material/WebhookOutlined";
-import ApiOutlinedIcon from "@mui/icons-material/ApiOutlined";
+// "use client";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../components/utils/variants";
+// import NotStartedOutlinedIcon from "@mui/icons-material/NotStartedOutlined";
+// import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
+// import PriceChangeOutlinedIcon from "@mui/icons-material/PriceChangeOutlined";
+// import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
+// import WebhookOutlinedIcon from "@mui/icons-material/WebhookOutlined";
+// import ApiOutlinedIcon from "@mui/icons-material/ApiOutlined";
 
 const HelpCenterCard = () => {
+
+
+  return <div>
+    play
+  </div>
   return (
     <div className="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-6 mt-10 text-darkGray">
       {/* card 1  */}

@@ -1,31 +1,31 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Stack,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  Typography,
-} from "@mui/material";
-import Image from "next/image";
-import React from "react";
-import masterCard from "../../assets/masterCard.png";
-import visaCard from "../../assets/visaLogo.png";
-import paypalLogo from "../../assets/paypalLogo.png";
-import discoverLogo from "../../assets/discover-logo-2.png";
-import maestroLogo from "../../assets/Maestro.png";
-import dinersClub from "../../assets/dinersClub.png";
-import bitcoin from "../../assets/coinImages/bitcoin.png";
-import Ethereum from "../../assets/coinImages/ethereum.png";
-import LiteCoin from "../../assets/coinImages/ltc.png";
-import Marquee from "react-fast-marquee";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import Container from "@/components/library/Container";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
+// import {
+//   Accordion,
+//   AccordionDetails,
+//   AccordionSummary,
+//   Stack,
+//   Table,
+//   TableBody,
+//   TableCell,
+//   TableHead,
+//   TableRow,
+//   Typography,
+// } from "@mui/material";
+// import Image from "next/image";
+// import React from "react";
+// import masterCard from "../../assets/masterCard.png";
+// import visaCard from "../../assets/visaLogo.png";
+// import paypalLogo from "../../assets/paypalLogo.png";
+// import discoverLogo from "../../assets/discover-logo-2.png";
+// import maestroLogo from "../../assets/Maestro.png";
+// import dinersClub from "../../assets/dinersClub.png";
+// import bitcoin from "../../assets/coinImages/bitcoin.png";
+// import Ethereum from "../../assets/coinImages/ethereum.png";
+// import LiteCoin from "../../assets/coinImages/ltc.png";
+// import Marquee from "react-fast-marquee";
+// import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+// import Container from "@/components/library/Container";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
 
 // add title in metadata
 export const metadata = {
@@ -34,6 +34,10 @@ export const metadata = {
 };
 
 const PaymentMethods = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="py-20">
       <Title>Payment Methods</Title>

@@ -4,27 +4,128 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { SiKhanacademy, SiMarketo } from "react-icons/si";
 import { HiMiniQueueList } from "react-icons/hi2";
 import { AiFillSliders, AiOutlineFundView } from "react-icons/ai";
+import { useEffect, useState } from "react";
+
+
+
+const subMenusOfMenus = [
+  {menu:"Accounts",
+    subMenu:[
+      {title:"Balance",route:"dashboard/accounts/balance"},
+      {title:"Deposit Funds",route:"dashboard/accounts/deposit-funds"},
+      {title:"Withdraw funds",route:"dashboard/accounts/withdraw-funds"},
+      {title:"Reserve Bars",route:"dashboard/accounts/reserve-bars"},
+      {title:"Validation",route:"dashboard/accounts/validation"},
+      {title:"Documents",route:"dashboard/accounts/documents"},
+      {title:"Settings",route:"dashboard/accounts/settings"},
+    ]
+  },
+  {menu:"History",
+    subMenu:[
+      {title:"Orders",route:"dashboard/history/orders"},
+      {title:"Statement",route:"dashboard/history/statement"},
+      {title:"Deposit and Withdrawals",route:"dashboard/history/deposit-and-withdrawals"},
+      {title:"Profit and Loss",route:"dashboard/history/profit-and-loss"},
+      {title:"Referrals",route:"dashboard/history/referrals"},
+    ]
+  },
+  {menu:"Buy/Sell ",
+    subMenu:[
+      {title:"Vaulted Gold & Silver",route:"dashboard/buy-and-sell/vaulted-metals"},
+      // {title:"Deposit Funds",route:"buy-and-sell/"},
+      {title:"Daily Price",route:"buy-and-sell/daily-price"},
+    ]
+  },
+  {menu:"Investment Guide",
+    subMenu:[
+      {title:"Guide to Silver",route:"/investment-guide/guide-to-gold"},
+      {title:"Guide to silver",route:"investment-guide/guide-to-silver"},
+      {title:"Withdraw funds",route:"investment-guide/guide-to-platinum"},
+    ]
+  },
+  {menu:"Gold News",
+    subMenu:[
+      {title:"Gold Price",route:"/gold-news/gold-price"},
+      {title:"Silver Price",route:"gold-news/silver-price"},
+      {title:"Platinum Price",route:"gold-news/platinum-price"},
+    ]
+  },
+
+]
 
 const SideNavLinks = ({ pathname, isActiveMenu }) => {
+
+  const [currentAccordionValue,setCurrentAccordionValue] = useState("Accounts")
+
+  useEffect(()=>{
+
+  },[currentAccordionValue])
   return (
     <>
-      <Link
-        href="/dashboard"
-        className={`w-full h-10 px-5 btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
+      {/* <div
+        className={`  h-10 px-5 btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
           pathname === "/dashboard"
             ? "text-primary border-l-4 border-l-primary"
             : "text-black dark:text-white dark:hover:text-primary hover:text-primary"
         }`}
-      >
-        {isActiveMenu ? (
+      > */}
+
+        {subMenusOfMenus.map((item,index)=>{
+
+          return <article className="px-5">
+
+          <div 
+          className={`mt-2    btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
+            currentAccordionValue.trim() == item.menu
+              ? "text-primary border-l-4 border-l-primary"
+              : "text-black dark:text-white dark:hover:text-primary hover:text-primary"
+          }`}
+          >
+             {isActiveMenu ? (
           <MdSpaceDashboard className="text-xl" />
         ) : (
-          <div className="flex items-center gap-2">
-            <MdSpaceDashboard className="text-lg" /> Dashboard
+          <div className="flex flex-col items-center gap-2  w-full ">
+           <div
+           className="flex items-center items-start w-full"
+           onClick={()=>{
+            console.log( currentAccordionValue == item.menu);
+            
+            
+            setCurrentAccordionValue(item.menu)
+            console.log(item.menu);
+            console.log(currentAccordionValue);
+// alert(item.menu)
+
+           }}
+           
+           > 
+            <MdSpaceDashboard className="text-lg" /> 
+            {item.menu}</div>
+           
+
           </div>
         )}
-      </Link>
-      <Link
+
+          </div>
+          {!isActiveMenu && currentAccordionValue === item.menu && <section className="flex flex-col gap-y-2 items-end   w-full ">
+
+{item.subMenu.map((submenu,index)=>{
+  
+  return (
+    <Link key={index + 1}
+    href={submenu.route}
+    className="text-[0.75rem] font-light hover:text-primary "
+    >
+   {submenu.title}
+   </Link>
+ )
+})}
+</section>}
+        </article>
+        })}
+
+      {/* </div> */}
+      {/* <Link
         href="/dashboard/trading"
         className={`w-full h-10 px-5 btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
           pathname === "/dashboard/trading"
@@ -37,7 +138,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
         ) : (
           <div className="flex items-center gap-2">
             <AiFillSliders className="text-lg" />
-            Trading
+            History
           </div>
         )}
       </Link>
@@ -55,7 +156,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
         ) : (
           <div className="flex items-center gap-2">
             <SiMarketo className="text-lg" />
-            Market
+            Buy/Sell Bullion
           </div>
         )}
       </Link>
@@ -72,7 +173,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
           <AiOutlineFundView className="text-xl" />
         ) : (
           <div className="flex items-center gap-2">
-            <AiOutlineFundView className="text-lg" /> Portfolio
+            <AiOutlineFundView className="text-lg" /> Investment Guide
           </div>
         )}
       </Link>
@@ -88,7 +189,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
           <HiMiniQueueList className="text-xl" />
         ) : (
           <div className="flex items-center gap-2">
-            <HiMiniQueueList className="text-lg" /> Watchlist
+            <HiMiniQueueList className="text-lg" /> Gold News
           </div>
         )}
       </Link>
@@ -104,11 +205,18 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
           <FaHistory className="text-xl" />
         ) : (
           <div className="flex items-center gap-2">
-            <FaHistory className="text-lg" /> History
+            <FaHistory className="text-lg" /> Chart
           </div>
         )}
-      </Link>
-      <Link
+      </Link> */}
+
+
+
+
+
+
+      {/* SEPARATED */}
+      {/* <Link
         href="/dashboard/academy"
         className={`w-full h-10 px-5 btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
           pathname === "/dashboard/academy"
@@ -156,7 +264,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
             <FaWallet className="text-lg" /> Wallet
           </div>
         )}
-      </Link>
+      </Link> */}
     </>
   );
 };

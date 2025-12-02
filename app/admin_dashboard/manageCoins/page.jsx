@@ -1,14 +1,24 @@
-import ManageCoinsBody from "@/components/admins_comp/ManageCoinsBody";
+// import ManageCoinsBody from "@/components/admins_comp/ManageCoinsBody";
 
-// add title in metadata
-export const metadata = {
-    title: "Manage coins - Dashboard",
-    description: "Effortlessly manage cryptocurrencies with NexTrade's Manage Coins Dashboard. Admins can add, delete, and update coins to ensure accurate and up-to-date listings.",
-};
+// // add title in metadata
+// export const metadata = {
+//     title: "Manage coins - Dashboard",
+//     description: "Effortlessly manage cryptocurrencies with NexTrade's Manage Coins Dashboard. Admins can add, delete, and update coins to ensure accurate and up-to-date listings.",
+// };
 
-const ManageCoins = () => {
-    return (
-        <ManageCoinsBody />
-    )
+// const ManageCoins = () => {
+//     return (
+//         <ManageCoinsBody />
+//     )
+// }
+// export default ManageCoins;
+
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
 }
-export default ManageCoins;
+
+export default page

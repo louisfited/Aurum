@@ -63,7 +63,8 @@ const AdminDashboard = ({ children }) => {
             isActiveMenu ? "3xl:ml-[108px]" : "3xl:ml-[228px]"
           } pt-[93px] pb-7`}
         >
-          {children}
+          <p>okay</p>
+          {/* {children} */}
         </div>
       </div>
     </AdminChecker>

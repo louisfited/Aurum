@@ -1,26 +1,26 @@
-"use client";
-import Image from "next/image";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  FormControl,
-  IconButton,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-} from "@mui/material";
-import useSecureAPI from "@/hooks/useSecureAPI";
-import Swal from "sweetalert2";
-import { useState } from "react";
-import toast from "react-hot-toast";
-import axios from "axios";
-import "./manageCoin.css";
+// "use client";
+// import Image from "next/image";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import EditIcon from "@mui/icons-material/Edit";
+// import {
+//   Button,
+//   Dialog,
+//   DialogActions,
+//   DialogContent,
+//   DialogTitle,
+//   FormControl,
+//   IconButton,
+//   InputLabel,
+//   MenuItem,
+//   Select,
+//   TextField,
+// } from "@mui/material";
+// import useSecureAPI from "@/hooks/useSecureAPI";
+// import Swal from "sweetalert2";
+// import { useState } from "react";
+// import toast from "react-hot-toast";
+// import axios from "axios";
+// import "./manageCoin.css";
 
 const image_hosting_key = `4696195291e937983db500161bc852ce`;
 const ManageFlatCoins = ({ assets, refetch }) => {
@@ -173,6 +173,10 @@ const ManageFlatCoins = ({ assets, refetch }) => {
       toast.error("Failed to upload image");
     }
   };
+
+  return( <div>
+    play
+  </div>)
   return (
     <div className="gap-6 grid md:grid-cols-2 2xl:grid-cols-3  3xl:grid-cols-4 my-6">
       <Dialog

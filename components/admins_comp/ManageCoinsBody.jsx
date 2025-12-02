@@ -1,35 +1,35 @@
-"use client";
-import ManageCrypto from "@/components/admins_comp/ManageCrypto";
-import ManageFlatCoins from "@/components/admins_comp/ManageFlatCoins";
-import usePublicFetch from "@/hooks/usePublicFetch";
-import useSecureAPI from "@/hooks/useSecureAPI";
-import { TabContext, TabList, TabPanel } from "@mui/lab";
-import {
-  Autocomplete,
-  Avatar,
-  AvatarGroup,
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  Tab,
-  TextField,
-  styled,
-} from "@mui/material";
-import axios from "axios";
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
-import Swal from "sweetalert2";
-import addImgIcon from "@/assets/addIconImg.png";
-import useAllCryptoCoins from "@/hooks/useAllCryptoCoins";
-import useAllFlatCoins from "@/hooks/useAllFlatCoins";
+// "use client";
+// import ManageCrypto from "@/components/admins_comp/ManageCrypto";
+// import ManageFlatCoins from "@/components/admins_comp/ManageFlatCoins";
+// import usePublicFetch from "@/hooks/usePublicFetch";
+// import useSecureAPI from "@/hooks/useSecureAPI";
+// import { TabContext, TabList, TabPanel } from "@mui/lab";
+// import {
+//   Autocomplete,
+//   Avatar,
+//   AvatarGroup,
+//   Box,
+//   Button,
+//   Dialog,
+//   DialogActions,
+//   DialogContent,
+//   DialogTitle,
+//   FormControl,
+//   InputLabel,
+//   MenuItem,
+//   Select,
+//   Tab,
+//   TextField,
+//   styled,
+// } from "@mui/material";
+// import axios from "axios";
+// import Image from "next/image";
+// import React, { useEffect, useState } from "react";
+// import toast from "react-hot-toast";
+// import Swal from "sweetalert2";
+// import addImgIcon from "@/assets/addIconImg.png";
+// import useAllCryptoCoins from "@/hooks/useAllCryptoCoins";
+// import useAllFlatCoins from "@/hooks/useAllFlatCoins";
 
 const image_hosting_key = `4696195291e937983db500161bc852ce`;
 
@@ -227,6 +227,10 @@ const ManageCoinsBody = () => {
     }
   };
 
+
+  return( <div>
+    play
+  </div>)
   return (
     <div>
       <div className="flex flex-col 2xl:flex-row gap-6 justify-between p-6 rounded-lg bg-gradient-to-l from-indigo-700 to-[#40a0ff]">

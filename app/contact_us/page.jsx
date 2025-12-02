@@ -1,9 +1,9 @@
-import Container from "@/components/library/Container";
-import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
-import PhoneForwardedOutlinedIcon from "@mui/icons-material/PhoneForwardedOutlined";
-import ContactForm from "@/components/contact/ContactForm";
-import Title from "@/components/library/Title";
-import Subtitle from "@/components/library/Subtitle";
+// import Container from "@/components/library/Container";
+// import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
+// import PhoneForwardedOutlinedIcon from "@mui/icons-material/PhoneForwardedOutlined";
+// import ContactForm from "@/components/contact/ContactForm";
+// import Title from "@/components/library/Title";
+// import Subtitle from "@/components/library/Subtitle";
 
 // add title in metadata
 export const metadata = {
@@ -12,6 +12,10 @@ export const metadata = {
 };
 
 const page = () => {
+
+  return( <div>
+    play
+  </div>)
   return (
     <Container className="pt-24 pb-10 ">
       <Title> Get in touch</Title>

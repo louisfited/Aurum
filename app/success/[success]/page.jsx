@@ -1,10 +1,10 @@
-"use client";
-import Button from "@/components/library/Button";
-import useAuth from "@/hooks/useAuth";
-import axios from "axios";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+// "use client";
+// import Button from "@/components/library/Button";
+// import useAuth from "@/hooks/useAuth";
+// import axios from "axios";
+// import Link from "next/link";
+// import { usePathname } from "next/navigation";
+// import { useEffect, useState } from "react";
 
 const Success = () => {
   const [purchaseLoading, setPurchaseLoading] = useState(true);
@@ -64,6 +64,9 @@ const Success = () => {
     setPurchasedProduct(null);
   };
 
+  return( <div>
+    play
+  </div>)
   if (purchaseLoading) {
     return (
       <div className="h-screen w-full flex justify-center items-center">
