@@ -1,3 +1,4 @@
+"use client"
 import Balance from "@/components/traders_comp/dashboard/Balance";
 import QuickTrade from "@/components/traders_comp/dashboard/quick-trade/QuickTrade";
 import TopAssets from "@/components/traders_comp/dashboard/TopAssets";
@@ -5,14 +6,22 @@ import Transactions from "@/components/traders_comp/dashboard/Transactions";
 import SideHistory from "@/components/traders_comp/market/SideHistory";
 import SidePortfolio from "@/components/traders_comp/market/SidePortfolio";
 import SideWatchlist from "@/components/traders_comp/market/SideWatchlist";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 // add title in metadata
-export const metadata = {
-  title: "Dashboard - Aurum",
-  description: "Dashboard page from Aurum",
-};
+// export const metadata = {
+//   title: "Dashboard - Aurum",
+//   description: "Dashboard page from Aurum",
+// };
 
 const page = () => {
+
+  const router = useRouter()
+  useEffect(()=>{
+router.push("/dashboard/accounts/balance")
+
+  },[])
   return (
    <>
 <div className="">

@@ -74,7 +74,7 @@ const Page = () => {
 
 {/* silver */}
 
-<div className='my-4 '>
+<div className='my-8'>
     <section className='flex justify-between font-bold'>
         <span>Silver</span>
         <div className='flex justify-between w-[25%]'>
@@ -87,16 +87,16 @@ const Page = () => {
     <section className='my-4'>
 {silverData.map((item,index)=>{
 
-    return <aside className='flex justify-between'>
+    return <aside key={index + 1} className='flex justify-between'>
          <span>{item.name}</span>
         <div className='w-[25%] flex justify-between'>
             <span>{item.total}</span>
             <span>{item.valuation}</span>
            
             <select name="" id="" className='dark:bg-darkOne'>
-                {item.sellAtBestPrice.map((option,index)=>{
+                {item.sellAtBestPrice.map((option,optionIndex)=>{
 
-                    return <option value="">
+                    return <option key={optionIndex} value="">
                         {option}
                     </option>
                 })}
