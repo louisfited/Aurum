@@ -2,7 +2,7 @@
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import UserMenu from "./nav_comp/UserMenu";
 import TradersNotification from "./nav_comp/TradersNotification/TradersNotification";
@@ -198,9 +198,9 @@ const TradersDashboardNavbar = ({ setMobileOpen, mobileOpen }) => {
               />
             )}
           />
-          <button type="submit" className="absolute right-2">
+          {/* <button type="submit" className="absolute right-2">
             <SearchIcon className="dark:text-gray-500 text-gray-700 mr-2" />
-          </button>
+          </button> */}
         </form>
       </div>
       <div className="flex items-center gap-4 md:gap-6">

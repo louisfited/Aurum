@@ -1,6 +1,6 @@
 "use client";
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+// import { Dialog, Transition } from "@headlessui/react";
 import BannerImg from "@/assets/random/register.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const Modal = () => {
 
   return (
     <Fragment>
-      <Transition.Root show={open} as={Fragment}>
+      {/* <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"
           className="fixed inset-0 z-10 overflow-y-auto"
@@ -103,7 +103,9 @@ const Modal = () => {
             </Transition.Child>
           </div>
         </Dialog>
-      </Transition.Root>
+      </Transition.Root> */}
+
+      <h1>Head</h1>
     </Fragment>
   );
 };

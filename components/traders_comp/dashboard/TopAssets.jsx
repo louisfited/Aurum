@@ -8,8 +8,8 @@ import useAllCryptoCoins from "@/hooks/useAllCryptoCoins";
 import useAllFlatCoins from "@/hooks/useAllFlatCoins";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import TrendingDownIcon from "@mui/icons-material/TrendingDown";
+// import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+// import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import "../market/market.css";
 import axios from "axios";
 
@@ -227,9 +227,11 @@ const TopAssets = () => {
                         >
                           {asset.changePrice}%{" "}
                           {asset.changePrice < 0 ? (
-                            <TrendingDownIcon />
+                            // <TrendingDownIcon />
+                            <div>okay</div>
                           ) : (
-                            <TrendingUpIcon />
+                            <div>okay</div>
+                            // <TrendingUpIcon />
                           )}
                         </p>
                       </div>

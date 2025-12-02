@@ -4,7 +4,7 @@ import { MdNotifications, MdNotificationsActive } from "react-icons/md";
 import Link from "next/link";
 import useNotificationData from "@/hooks/useNotificationData";
 import useSecureAPI from "@/hooks/useSecureAPI";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 import "./notificationsCss.css";

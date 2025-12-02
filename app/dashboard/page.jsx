@@ -8,41 +8,48 @@ import SideWatchlist from "@/components/traders_comp/market/SideWatchlist";
 
 // add title in metadata
 export const metadata = {
-  title: "Dashboard - NexTrade",
-  description: "Dashboard page from Nextrade",
+  title: "Dashboard - Aurum",
+  description: "Dashboard page from Aurum",
 };
 
 const page = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-12 gap-7">
-      {/* total balance */}
-      <Balance />
-
-      {/* trending assets */}
-      <QuickTrade />
-
-      {/* top assets slider */}
-      <TopAssets />
-
-      {/* trending assets */}
-      <Transactions />
-
-      {/* watchlist */}
-      <div className="h-full xl:col-span-6 3xl:col-span-4">
-        <SidePortfolio />
-      </div>
-
-      {/* history */}
-      <div className="h-full xl:col-span-6 3xl:col-span-4">
-        <SideHistory />
-      </div>
-
-      {/* watchlist */}
-      <div className="h-full xl:col-span-6 3xl:col-span-4">
-        <SideWatchlist />
-      </div>
-    </div>
+   <>
+<div className="">
+dashboard
+</div>
+   </>
   );
 };
 
 export default page;
+
+
+
+
+{/* total balance */}
+<Balance />
+
+{/* trending assets */}
+<QuickTrade />
+
+{/* top assets slider */}
+<TopAssets />
+
+{/* trending assets */}
+<Transactions />
+
+{/* watchlist */}
+<div className="h-full xl:col-span-6 3xl:col-span-4">
+  <SidePortfolio />
+</div>
+
+{/* history */}
+<div className="h-full xl:col-span-6 3xl:col-span-4">
+  <SideHistory />
+</div>
+
+{/* watchlist */}
+<div className="h-full xl:col-span-6 3xl:col-span-4">
+  <SideWatchlist />
+</div>

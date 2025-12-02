@@ -11,7 +11,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import * as MuiIcons from "@mui/icons-material";
+// import * as MuiIcons from "@mui/icons-material";
 import Link from "next/link";
 import axios from "axios";
 import useSecureFetch from "@/hooks/useSecureFetch";
@@ -261,9 +261,15 @@ const SidePortfolio = () => {
                         parseFloat(asset.assetBuyingPrice),
                         asset.assetPortion
                       ).toFixed(2) > 0 ? (
-                        <MuiIcons.ArrowDropUpSharp className="text-green-700" />
+                        // <MuiIcons.ArrowDropUpSharp className="text-green-700" />
+                        <>
+                        data
+                        </>
                       ) : (
-                        <MuiIcons.ArrowDropDownSharp className="text-red-700" />
+                        // <MuiIcons.ArrowDropDownSharp className="text-red-700" />
+                        <>
+                        data
+                        </>
                       )}
                     </span>
                   </TableCell>
