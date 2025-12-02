@@ -75,6 +75,18 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
           return <article className="px-5">
 
           <div 
+
+onClick={()=>{
+  console.log( currentAccordionValue == item.menu);
+  
+  
+  setCurrentAccordionValue(item.menu)
+  console.log(item.menu);
+  console.log(currentAccordionValue);
+// alert(item.menu)
+
+ }}
+ 
           className={`mt-2    btn btn-sm justify-start bg-transparent hover:bg-transparent border-4 border-transparent hover:border-transparent hover:border-l-4 hover:border-l-primary rounded-none shadow-none ${
             currentAccordionValue.trim() == item.menu
               ? "text-primary border-l-4 border-l-primary"
@@ -87,16 +99,16 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
           <div className="flex flex-col items-center gap-2  w-full ">
            <div
            className="flex items-center items-start w-full"
-           onClick={()=>{
-            console.log( currentAccordionValue == item.menu);
+//            onClick={()=>{
+//             console.log( currentAccordionValue == item.menu);
             
             
-            setCurrentAccordionValue(item.menu)
-            console.log(item.menu);
-            console.log(currentAccordionValue);
-// alert(item.menu)
+//             setCurrentAccordionValue(item.menu)
+//             console.log(item.menu);
+//             console.log(currentAccordionValue);
+// // alert(item.menu)
 
-           }}
+//            }}
            
            > 
             <MdSpaceDashboard className="text-lg" /> 
