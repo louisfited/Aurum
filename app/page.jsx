@@ -7,10 +7,10 @@ import TradingStep from "@/components/home_comp/TradingStep";
 import WhyNexTrade from "@/components/home_comp/WhyNexTrade";
 import Testimonials from "@/components/home_comp/Testimonials";
 import Modal from "@/components/home_comp/Modal";
-
-import MetalsPriceTable from "@/components/MetalWidget";
-import MetalsOverviewTable from "@/components/MetalWidget";
 import MetalWidget from "@/components/MetalWidget";
+
+
+
 
 
 // add title in metadata

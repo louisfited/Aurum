@@ -17,9 +17,10 @@ const TradersDashboardSidebar = ({
       <Link href="/" className="pl-3 mt-1 mb-3">
         {" "}
         {isActiveMenu ? (
-          <Image src={logo} width={40} height={"auto"} alt="logo" />
+          ""
         ) : (
-          <Image src={logoOriginal} width={130} height={"auto"} alt="logo" />
+          <Image src={"/aurumlogo.png"} width={100} height={40} alt="logo" />
+          // <Image src={logoOriginal} width={130} height={"auto"} alt="logo" />
         )}
       </Link>
       <button

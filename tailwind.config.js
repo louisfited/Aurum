@@ -18,6 +18,8 @@ module.exports = {
         darkOne: '#1d2334',
         darkTwo: '#212a3f',
         darkThree: '#2c3750',
+        darkGrayOne:"#6B7280",
+        grayOne:"#D1D5DB",
       },
       backgroundColor: {
         primary: '#40a0ff', //blue
