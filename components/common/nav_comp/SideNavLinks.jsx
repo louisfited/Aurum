@@ -12,12 +12,12 @@ const subMenusOfMenus = [
   {menu:"Accounts",
     subMenu:[
       {title:"Balance",route:"dashboard/accounts/balance"},
-      {title:"Deposit Funds",route:"dashboard/accounts/deposit-funds"},
-      {title:"Withdraw funds",route:"dashboard/accounts/withdraw-funds"},
-      {title:"Reserve Bars",route:"dashboard/accounts/reserve-bars"},
-      {title:"Validation",route:"dashboard/accounts/validation"},
-      {title:"Documents",route:"dashboard/accounts/documents"},
-      {title:"Settings",route:"dashboard/accounts/settings"},
+      {title:"Deposit Funds",route:"/dashboard/accounts/deposit-funds"},
+      {title:"Withdraw funds",route:"/dashboard/accounts/withdraw-funds"},
+      {title:"Reserve Bars",route:"/dashboard/accounts/reserve-bars"},
+      {title:"Validation",route:"/dashboard/accounts/validation"},
+      {title:"Documents",route:"/dashboard/accounts/documents"},
+      {title:"Settings",route:"/dashboard/accounts/settings"},
     ]
   },
   {menu:"History",
