@@ -22,32 +22,33 @@ const subMenusOfMenus = [
   },
   {menu:"History",
     subMenu:[
-      {title:"Orders",route:"dashboard/history/orders"},
-      {title:"Statement",route:"dashboard/history/statement"},
-      {title:"Deposit and Withdrawals",route:"dashboard/history/deposit-and-withdrawals"},
-      {title:"Profit and Loss",route:"dashboard/history/profit-and-loss"},
-      {title:"Referrals",route:"dashboard/history/referrals"},
+      {title:"Orders",route:"/dashboard/history/orders"},
+      {title:"Statement",route:"/dashboard/history/statement"},
+      {title:"Deposit and Withdrawals",route:"/dashboard/history/deposits-and-withdrawals"},
+      {title:"Profit and Loss",route:"/dashboard/history/profit-and-loss"},
+      {title:"Gold Bar Withdrawal",route:"/dashboard/history/gold-bar-withdrawal"},
+      {title:"Referrals",route:"/dashboard/history/referrals"},
     ]
   },
   {menu:"Buy/Sell ",
     subMenu:[
-      {title:"Vaulted Gold & Silver",route:"dashboard/buy-and-sell/vaulted-metals"},
+      {title:"Vaulted Gold & Silver",route:"/dashboard/buy-and-sell/vaulted-metals"},
       // {title:"Deposit Funds",route:"buy-and-sell/"},
-      {title:"Daily Price",route:"buy-and-sell/daily-price"},
+      {title:"Daily Price",route:"/buy-and-sell/daily-price"},
     ]
   },
   {menu:"Investment Guide",
     subMenu:[
       {title:"Guide to Silver",route:"/investment-guide/guide-to-gold"},
-      {title:"Guide to silver",route:"investment-guide/guide-to-silver"},
-      {title:"Withdraw funds",route:"investment-guide/guide-to-platinum"},
+      {title:"Guide to silver",route:"/investment-guide/guide-to-silver"},
+      {title:"Withdraw funds",route:"/investment-guide/guide-to-platinum"},
     ]
   },
   {menu:"Gold News",
     subMenu:[
       {title:"Gold Price",route:"/gold-news/gold-price"},
-      {title:"Silver Price",route:"gold-news/silver-price"},
-      {title:"Platinum Price",route:"gold-news/platinum-price"},
+      {title:"Silver Price",route:"/gold-news/silver-price"},
+      {title:"Platinum Price",route:"/gold-news/platinum-price"},
     ]
   },
 
@@ -72,7 +73,7 @@ const SideNavLinks = ({ pathname, isActiveMenu }) => {
 
         {subMenusOfMenus.map((item,index)=>{
 
-          return <article className="px-5">
+          return <article key={index + 1} className="px-5">
 
           <div 
 

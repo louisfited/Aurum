@@ -63,7 +63,7 @@ const Dashboard = ({ children }) => {
           </div>
 
           <div
-            className={`mx-4 lg:mx-7 transition-all duration-200 ease-out  ${
+            className={`mx-1 lg:mx-7 transition-all duration-200 ease-out  ${
               isActiveMenu ? "3xl:ml-[108px]" : "3xl:ml-[228px]"
             } pt-[93px] pb-7`}
           >
