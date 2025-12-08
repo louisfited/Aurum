@@ -1,4 +1,6 @@
 "use client"
+import BuySellWizard from '@/components/BuySellWizard';
+import DashboardContainer from '@/components/dashboard-comp/DashboardContainer';
 import { QuestionMark } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { FaAngleRight } from "react-icons/fa6";
@@ -58,8 +60,14 @@ const Page = () => {
 </section>
 
 
-{/* summary and valuation */}
-<div className='mt-6 dark:bg-darkOne bg-white rounded-lg  overflow-hidden'>
+{/* container */}
+<DashboardContainer>
+
+
+
+
+<article className='lg:w-[70%] mt-6'>
+<div className='dark:bg-darkOne bg-white rounded-lg  overflow-hidden'>
     {/* header */}
     <section className='flex justify-between py-3 dark:bg-gray-500 bg-gray-300 px-2'>
         <span className='font-bold text-lg'>Summary</span>
@@ -123,7 +131,8 @@ const Page = () => {
     {silverData.map((item,index)=>{
 
 
-     return ( <div className='px-2 py-2'>
+     return ( 
+     <div key={index + 1} className='px-2 py-2'>
 
         <aside
         onClick={()=>{
@@ -329,6 +338,16 @@ const Page = () => {
     </section>
 
 </div>
+</article>
+
+{/* buy sell wizard */}
+<>
+<div className='lg:w-[30%] h-[200px] mt-6 lg:sticky top-6'>
+ <BuySellWizard/>
+</div>
+</>
+
+</DashboardContainer>
     </div>
   )
 }
