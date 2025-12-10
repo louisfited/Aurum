@@ -1,9 +1,6 @@
 import Link from "next/link";
-import { FaHistory, FaUserCircle, FaWallet } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";
-import { SiKhanacademy, SiMarketo } from "react-icons/si";
-import { HiMiniQueueList } from "react-icons/hi2";
-import { AiFillSliders, AiOutlineFundView } from "react-icons/ai";
+
 import { useEffect, useState } from "react";
 
 
@@ -33,9 +30,8 @@ const subMenusOfMenus = [
   },
   {menu:"Buy/Sell ",
     subMenu:[
-      {title:"Vaulted Gold & Silver",route:"/dashboard/buy-and-sell/vaulted-metals"},
-      // {title:"Deposit Funds",route:"buy-and-sell/"},
-      {title:"Daily Price",route:"/buy-and-sell/daily-price"},
+      // {title:"Vaulted Gold & Silver",route:"/dashboard/buy-and-sell/vaulted-metals"},
+      {title:"Daily Price",route:"/dashboard/buy-and-sell/daily-price"},
     ]
   },
   {menu:"Investment Guide",
@@ -45,13 +41,19 @@ const subMenusOfMenus = [
       {title:"Withdraw funds",route:"/investment-guide/guide-to-platinum"},
     ]
   },
-  {menu:"Gold News",
+  {menu:"Chart",
     subMenu:[
-      {title:"Gold Price",route:"/gold-news/gold-price"},
-      {title:"Silver Price",route:"/gold-news/silver-price"},
-      {title:"Platinum Price",route:"/gold-news/platinum-price"},
+      {title:"Gold Chart",route:"/dashboard/chart/gold-chart"},
+      {title:"Silver Chart",route:"/dashboard/chart/silver-chart"},
     ]
   },
+  // {menu:"Gold News",
+  //   subMenu:[
+  //     {title:"Gold Price",route:"/gold-news/gold-price"},
+  //     {title:"Silver Price",route:"/gold-news/silver-price"},
+  //     {title:"Platinum Price",route:"/gold-news/platinum-price"},
+  //   ]
+  // },
 
 ]
 
