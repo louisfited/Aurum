@@ -4,7 +4,7 @@ import React from 'react'
 const Page = () => {
   return (
     <div>
-        <HeaderComp title="Referral statistics" description={"View your performance as a referrer"}/>
+        <HeaderComp title="Referral statistics"  description={"View your performance as a referrer"}/>
     </div>
   )
 }
