@@ -2,7 +2,7 @@
 const nextConfig = {}
 
 module.exports = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   transpilePackages: ['@mui/x-charts'],
   images: {
     domains: [
