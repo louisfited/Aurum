@@ -13,7 +13,6 @@ import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import logo from "../../assets/logo/NexTrade-Logo-Original.png";
 
 // customized TextField
 const CssTextField = styled(TextField)({
