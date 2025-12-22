@@ -9,7 +9,6 @@ export default function proxy(request:NextRequest) {
     // console.log(pathname);
     
 
-
     return NextResponse.next()
     
 }
